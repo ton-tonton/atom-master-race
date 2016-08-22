@@ -35,7 +35,7 @@
 
 atom-text-editor {
   font-family: 'Fira Code';
-  font-style: normal;  
+  font-style: normal;
   text-rendering: optimizeLegibility;
 }
 atom-text-editor::shadow {
@@ -43,16 +43,17 @@ atom-text-editor::shadow {
   .string.regexp {
     -webkit-font-feature-settings: "liga" off, "calt" off;
   }
-  .source.js.jsx > .keyword.control.flow.js,
-  .storage, .type .function {
+  .source.js > .keyword.control,
+  .storage, .type .function{
     vertical-align: baseline;
     font-family: 'flottflott';
     height: inherit;
     font-size: 1.5 * @fontsize;
     line-height: @fontsize;
   }
-  .source.js.jsx,
+  .source.js,
   .storage.type.function.arrow.js,
+  .storage.type.class.todo,
   .indent-guide,
   .variable {
     font-family: 'Fira Code';
