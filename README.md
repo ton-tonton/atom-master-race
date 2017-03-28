@@ -31,36 +31,33 @@
 
 ### Stylesheet
 ```CSS
-@fontsize: 20px;
-
 atom-text-editor {
   font-family: 'Fira Code';
   font-style: normal;
   text-rendering: optimizeLegibility;
 }
-atom-text-editor {
+
+atom-text-editor.editor {
   .syntax--string.syntax--quoted,
   .syntax--string.syntax--regexp {
     -webkit-font-feature-settings: "liga" off, "calt" off;
   }
-  .syntax--source.syntax--js > .syntax--keyword.syntax--control,
+  .syntax--source.syntax--js > .syntax--keyword.syntax--control.syntax--js,
   .syntax--storage,
   .syntax--type .syntax--function {
     vertical-align: baseline;
     font-family: 'flottflott';
     height: inherit;
-    font-size: 1.5 * @fontsize;
-    line-height: @fontsize;
+    font-size: 1.5em;
+    line-height: 1rem;
   }
   .syntax--source.syntax--js,
   .syntax--storage.syntax--type.syntax--function.syntax--arrow.syntax--js,
   .syntax--storage.syntax--type.syntax--class.syntax--todo,
-  .indent-guide,
   .syntax--variable {
     font-family: 'Fira Code';
     font-style: normal;
-    font-size: @fontsize;
-    line-height: 1.5 * @fontsize;
+    font-size: 1em;
   }
   .syntax--string.syntax--unquoted.syntax--js {
     color: #CDD3DE;
